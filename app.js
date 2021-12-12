@@ -37,6 +37,5 @@ function displaySongs(data) {
                 <p>${song.title}
             </div>
         `).join('')}
-    
     `
 }

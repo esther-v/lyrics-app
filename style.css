@@ -1,0 +1,38 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#search{
+    padding: 10px;
+    border-radius: 0px 16px 0px 16px;
+    transition: 0.4s;
+    outline: none;
+    border-radius: 0px 16px 0px 16px;
+    transition: 0.4s;
+}
+#search:focus{
+    border-radius: 16px 0px 16px 0px ;
+}
+
+.results{
+    min-width: 80%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.song{
+    margin: 10px auto;
+    width: 100%;
+    border-radius: 5px;
+    background: rgb(251, 182, 54,0.3);
+    padding: 10px;
+}
+.song:nth-child(even){
+    background: rgba(187, 139, 208,0.3);
+}
