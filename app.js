@@ -26,16 +26,31 @@ async function searchSongs(searchValue) {
     displaySongs(data)
 }
 
-//display the result
+//display the results
 function displaySongs(data) {
     results.innerHTML = `
-    
+  
         ${data.data
         .map(song => `
+       
             <div class="song">
-                <strong>${song.artist.name}</strong>
-                <p>${song.title}
+                <div>
+                    <strong>${song.artist.name}</strong>
+                    <p>${song.title}</p>
+                </div>
+                <button data-artist="${song.artist.name}" data-songtitle="${song.title}">Lyrics</button>   
             </div>
+               
         `).join('')}
     `
 }
+
+//button to get lyrics
+results.addEventListener('click', e => {
+    const clickedBtn = e.target
+    if(clickedBtn.tagName === 'BUTTON') {
+        const artist = clickedBtn.getAttribute('data-artist')
+        const songTitle = clickedBtn.getAttribute('data-songtitle')
+        console.log(artist, songTitle)
+    }
+})

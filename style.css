@@ -7,18 +7,14 @@ body{
 
 #search{
     padding: 10px;
-    border-radius: 0px 16px 0px 16px;
-    transition: 0.4s;
+    
     outline: none;
-    border-radius: 0px 16px 0px 16px;
-    transition: 0.4s;
-}
-#search:focus{
-    border-radius: 16px 0px 16px 0px ;
+    width: 300px;
 }
 
+
 .results{
-    min-width: 80%;
+    min-width: 60%;
     margin: 40px auto;
     display: flex;
     align-items: center;
@@ -32,6 +28,9 @@ body{
     border-radius: 5px;
     background: rgb(251, 182, 54,0.3);
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .song:nth-child(even){
     background: rgba(187, 139, 208,0.3);
