@@ -1,15 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    text-align: center;
+    cursor: pointer;
+}
+button{
+    padding: 10px 13px;
+    background: #4834d4; 
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-family: inherit;
 }
 
 #search{
     padding: 10px;
-    
     outline: none;
     width: 300px;
+    border-radius: 5px;
+    border: 1px solid #4834d4;
+    font-family: inherit;
 }
 
 
@@ -26,12 +43,12 @@ body{
     margin: 10px auto;
     width: 100%;
     border-radius: 5px;
-    background: rgb(251, 182, 54,0.3);
+    background: #ffbe76;
     padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 .song:nth-child(even){
-    background: rgba(187, 139, 208,0.3);
+    background: rgb(255, 121, 121);
 }
